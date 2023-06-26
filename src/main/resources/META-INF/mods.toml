@@ -7,7 +7,7 @@ issueTrackerURL="https://github.com/Sniffity/SniffitysCreatures/issues"
 modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
-logoFile="${mod_name}.png"
+logoFile="${mod_id}.png"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
@@ -24,14 +24,14 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
-    modId="geckolib3"
+    modId="geckolib"
     mandatory=true
     versionRange="${geckolib_version_range}"
     ordering="BEFORE"
     side="BOTH"
 [[dependencies.${mod_id}]]
-    modId="geckolib3"
+    modId="smartbrainlib"
     mandatory=true
-    versionRange="${geckolib_version_range}"
+    versionRange="${sbl_version_range}"
     ordering="BEFORE"
     side="BOTH"
