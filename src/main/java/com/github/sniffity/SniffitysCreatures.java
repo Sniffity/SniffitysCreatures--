@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.github.sniffity;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -28,11 +28,11 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ExampleMod.MODID)
-public class ExampleMod
+@Mod(SniffitysCreatures.MODID)
+public class SniffitysCreatures
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "examplemod";
+    public static final String MODID = "sniffityscreatures";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
@@ -59,7 +59,7 @@ public class ExampleMod
                 output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());
 
-    public ExampleMod()
+    public SniffitysCreatures()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
