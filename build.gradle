@@ -14,9 +14,8 @@ archivesBaseName = mod_id
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'parchment', version: '1.19.3-2023.06.25-1.20.1'
+    mappings channel: mappings_channel, version: "${mappings_version}"
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
     runs {
         client {
             workingDirectory project.file('run')
@@ -54,8 +53,8 @@ repositories {
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
     }
     maven {
-        name = 'SmartBrainLib (SBL) Maven Repo'
-        url = 'https://dl.cloudsmith.io/public/tslat/sbl/maven/'
+        name 'SmartBrainLib (SBL) Maven Repo'
+        url 'https://dl.cloudsmith.io/public/tslat/sbl/maven/'
     }
 }
 
